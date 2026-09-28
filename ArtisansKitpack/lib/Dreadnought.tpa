@@ -323,9 +323,9 @@ END
 COPY_EXISTING ~C0DRED0C.SPL~ OVERRIDE
 SAY NAME1 ~势不可挡~
 
-ADD_PROJECTILE ~%MOD_FOLDER%/Fighter/Dreadnought/spells/c0dredp1.PRO~ ~无畏旋风~
-ADD_PROJECTILE ~%MOD_FOLDER%/Fighter/Dreadnought/spells/c0dredp2.PRO~ ~无畏碎击~
-ADD_PROJECTILE ~%MOD_FOLDER%/Fighter/Dreadnought/spells/c0dredp3.PRO~ ~无畏震地~
+ADD_PROJECTILE ~%MOD_FOLDER%/Fighter/Dreadnought/spells/c0dredp1.PRO~ ~Dreadnought Whirlwind~
+ADD_PROJECTILE ~%MOD_FOLDER%/Fighter/Dreadnought/spells/c0dredp2.PRO~ ~Dreadnought Shattering Strike~
+ADD_PROJECTILE ~%MOD_FOLDER%/Fighter/Dreadnought/spells/c0dredp3.PRO~ ~Dreadnought Ground~
 
 DEFINE_ACTION_FUNCTION cd_new_portrait_icon
   INT_VAR string = 0
