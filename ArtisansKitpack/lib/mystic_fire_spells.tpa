@@ -39,7 +39,7 @@ ACTION_FOR_EACH description IN
         PATCH_IF "%row_name%" STRING_EQUAL_CASE "C0MF" BEGIN
           READ_2DA_ENTRY index 4 col_count kit_desc
           SPRINT old_desc ~<MF_LEVEL5>~
-          SPRINT new_desc ~5级：法术免疫、神谕术、阳炎术、寒冰锥
+          SPRINT new_desc ~ 5级：法术免疫、神谕术、阳炎术、寒冰锥
 ~
           GET_STRREF %kit_desc% desc_text
           INNER_PATCH_SAVE desc_text ~%desc_text%~ BEGIN
@@ -91,7 +91,7 @@ ACTION_FOR_EACH description IN
         PATCH_IF "%row_name%" STRING_EQUAL_CASE "C0MF" BEGIN
           READ_2DA_ENTRY index 4 col_count kit_desc
           SPRINT old_desc ~<MF_LEVEL6>~
-          SPRINT new_desc ~6级：无效结界、魔法武器防护、高级加速术、法术偏转
+          SPRINT new_desc ~ 6级：无效结界、魔法武器防护、高级加速术、法术偏转
 ~
           GET_STRREF %kit_desc% desc_text
           INNER_PATCH_SAVE desc_text ~%desc_text%~ BEGIN
@@ -145,7 +145,7 @@ ACTION_FOR_EACH description IN
         PATCH_IF "%row_name%" STRING_EQUAL_CASE "C0MF" BEGIN
           READ_2DA_ENTRY index 4 col_count kit_desc
           SPRINT old_desc ~<MF_LEVEL7>~
-          SPRINT new_desc ~7级：有限祈愿术、凯尔本金的守护鞭、魔邓肯之剑、法术反转
+          SPRINT new_desc ~ 7级：有限祈愿术、凯尔本金的守护鞭、魔邓肯之剑、法术反转
 ~
           GET_STRREF %kit_desc% desc_text
           INNER_PATCH_SAVE desc_text ~%desc_text%~ BEGIN

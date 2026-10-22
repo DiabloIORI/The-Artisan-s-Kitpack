@@ -274,10 +274,10 @@ LPF ALTER_SPELL_HEADER INT_VAR speed = 1 END
 LPF ALTER_EFFECT INT_VAR power = 100 END
 
 COPY_EXISTING ~C0MK#008.SPL~ ~OVERRIDE~
-SAY NAME1 ~Spellstrike~
-SAY UNIDENTIFIED_DESC ~The Magekiller gains the ability to cast Spellstrike as an innate ability once per day.
+SAY NAME1 ~法击~
+SAY UNIDENTIFIED_DESC ~法师杀手可每日天生施展一次本法击。
 
-This ability may be chosen up to three times.~
+本职业能力最多可选取3次。~
 
 COPY_EXISTING ~SPWI903.spl~ ~override/C0MK#009.spl~
 WRITE_SHORT 0x1C 4 
