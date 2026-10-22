@@ -60,7 +60,7 @@ STRING_SET_EVALUATE kit_strref ~变形者：这名德鲁伊之所以被称为变
   13级：每回合额外获得一次攻击
   14级：免疫+1及以下附魔的武器，魔法抗性提升至+50%
   15级：流血每回合造成5点伤害，攻击视为+4武器；流血的豁免惩罚变为-4
-  
+
 -6级：获得被动能力「原初怒嚎」。
 
 原初怒嚎：变形者化身为狼人时，会发出震慑心神的怒嚎，变形的前三回合内，每回合额外获得半次攻击，护甲等级、攻击检定与伤害获得+3加值。之后每回合，攻击次数减少半次、护甲/攻击/伤害加值-1，逐步递减；下次变形时，需等待6回合才能再次触发原初怒嚎。此外，变回原生形态时，加值立即消失。原初怒嚎的加值随等级提升。
@@ -70,7 +70,7 @@ STRING_SET_EVALUATE kit_strref ~变形者：这名德鲁伊之所以被称为变
   14级：原初怒嚎会将一半加值赋予25尺范围内的所有友军，持续一半时间。
   15级：击杀目标时100%触发原初怒嚎。
   16级：除恐惧外，还会附带震慑效果，惩罚与生效条件和恐惧相同。
-  
+
 -8级：狼血：变形者每3回合恢复1点生命值，狼人形态时恢复量翻三倍。
 -10级：变形不再占用每回合的行动。
 -12级：可随意变形为狼形。
@@ -83,7 +83,7 @@ STRING_SET_EVALUATE kit_strref ~变形者：这名德鲁伊之所以被称为变
 -无法穿戴任何护甲。
 –为了维持与<PRO_HISHER>人形间的平衡所以无法使用其它变形能力。
 -无法选择「元素召唤」与「元素变形」高阶能力。~
-	
+
   COPY_EXISTING ~luabbr.2da~ ~override~
 	COUNT_2DA_COLS cols // amount of columns
 	READ_2DA_ENTRIES_NOW rows cols // read all file into memory  
@@ -94,7 +94,7 @@ STRING_SET_EVALUATE kit_strref ~变形者：这名德鲁伊之所以被称为变
 		SET_2DA_ENTRY (%patch_row%) 1 cols ~C0-SS~
 	  END
 	END
-	
+
 COPY_EXISTING ~LUDR0.2da~ ~override/LUC0-SS.2DA~
 LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPPR723~ END
 LPF patch_remove_hla STR_VAR remove_ability = ~GA_SPPR724~ END

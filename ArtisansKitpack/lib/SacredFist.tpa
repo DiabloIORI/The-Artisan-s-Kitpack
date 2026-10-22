@@ -39,7 +39,7 @@ LAF ADD_KIT_EX
   13-16级：1d10
   17-20级：1d12
   21级及以上：2d8
-  
+
 –气：神拳使修士的徒手攻击贯注气劲，4级时视为+1附魔魔法武器，8级+2，12级+3，16级+4，20级+5。7级起，视为银质武器。
 –智慧每超过12点1点，神拳使修士基础护甲等级+1。7级起每提升7级，护甲等级额外+1。
 –可使用寻找陷阱与侦测幻象能力。
@@ -67,7 +67,7 @@ LAF ADD_KIT_EX
 –仅可为人类、半精灵或半兽人。
 –兼职仅可选择游荡者或法师。
 –持用任何武器时，零级命中值受-6惩罚。~)
-	
+
     briefdesc     = RESOLVE_STR_REF(~神拳使：神拳使是神殿中的苦行修行组织，修士将神圣魔法向内修炼，以求身心和谐。他们立誓弃绝武器与重甲，视身心为神祇恩赐，以将天赋修至极致为己任。~)
   STR_VAR
     kit_name      = ~C0_SACRED_FIST~
@@ -219,7 +219,7 @@ SAY UNIDENTIFIED_DESC ~神圣焰击
 神拳使修士在手脚周围召起神圣火焰，接下来1回合内，近战攻击额外造成1d6魔法火焰伤害与1d6魔法伤害。~
 
 OUTER_SET sacred_fist_ids = IDS_OF_SYMBOL (~kit~ ~C0_SACRED_FIST~)
-  
+
 COPY ~%MOD_FOLDER%/lua/m_c0mnk1.lua~      ~override~ // Lua file read by EEex, provided by Bubbs and further edited by myself
 ///////////////////////////////////////////////////////////////////////////
 // Update lua file                                                       //

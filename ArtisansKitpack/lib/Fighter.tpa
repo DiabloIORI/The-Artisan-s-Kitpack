@@ -102,10 +102,10 @@ ACTION_FOR_EACH description IN
 //BERSERKER
         PATCH_IF "%row_name%" STRING_EQUAL_CASE "BERSERKER" BEGIN
           READ_2DA_ENTRY index 4 col_count berserker_desc
-          SPRINT old_berserker ~－无法精通远程武器。~
-          SPRINT new_berserker ~－无法使用寓守于攻与快速射击。
-－16级时不会获得全武器专精。
-－无法精通远程武器。~
+          SPRINT old_berserker ~-无法精通远程武器。~
+          SPRINT new_berserker ~-无法使用寓守于攻与快速射击。
+-16级时不会获得全武器专精。
+-无法精通远程武器。~
           GET_STRREF %berserker_desc% berserker_text
           INNER_PATCH_SAVE berserker_text ~%berserker_text%~ BEGIN
             REPLACE_TEXTUALLY ~%old_berserker%~ ~%new_berserker%~
@@ -164,18 +164,18 @@ ACTION_FOR_EACH description IN
 //BARBARIAN
         PATCH_IF "%row_name%" STRING_EQUAL_CASE "BARBARIAN" BEGIN
           READ_2DA_ENTRY index 4 col_count barbarian_desc
-          SPRINT old_barbarian ~－11级：获得10%的钝击、挥砍、穿刺和远程伤害抗性。在15级和19级时，各额外获得5%抗性。~
-          SPRINT new_barbarian ~－5级：可使用猛力攻击模式能力。
-		  
+          SPRINT old_barbarian ~-11级：获得10%的钝击、挥砍、穿刺和远程伤害抗性。在15级和19级时，各额外获得5%抗性。~
+          SPRINT new_barbarian ~-5级：可使用猛力攻击模式能力。
+
 猛力攻击：野蛮人牺牲命中精度以换取更重的伤害，每轮近战命中降低3点，近战伤害提升3点。野蛮人力量需达到17点及以上才能激活此能力。
 
-－6级：可使用快速射击模式能力。
+-6级：可使用快速射击模式能力。
 
 快速射击：野蛮人每轮可额外进行一次远程攻击，但命中判定受到-4减值。
 
-－11级：获得10%的钝击、挥砍、穿刺和远程伤害抗性。在15级和19级时，各额外获得5%抗性。
-－12级：精通快速射击：快速射击激活时的命中减值降低至-2。
-－14级：可使用精通猛力攻击，原能力的加成与减值均提升至6点。~
+-11级：获得10%的钝击、挥砍、穿刺和远程伤害抗性。在15级和19级时，各额外获得5%抗性。
+-12级：精通快速射击：快速射击激活时的命中减值降低至-2。
+-14级：可使用精通猛力攻击，原能力的加成与减值均提升至6点。~
 
           GET_STRREF %barbarian_desc% barbarian_text
           INNER_PATCH_SAVE barbarian_text ~%barbarian_text%~ BEGIN

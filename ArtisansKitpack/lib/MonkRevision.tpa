@@ -346,7 +346,7 @@ ACTION_IF (FILE_EXISTS_IN_GAME ~%CLASSTEXT%.2da~) BEGIN
   15-19级：2d8
   20-24级：2d10
   25级及以上：2d12
-  
+
 –气：武僧的徒手攻击贯注气之力，4级时视为+1附魔魔法武器，8级+2，12级+3，16级+4，20级+5。7级起，视为银质武器。
 –所有豁免检定+1。5级起每提升5级额外+1。
 –智力每超过12点1点，武僧基础护甲等级+1。5级起每提升5级护甲等级额外+1。
@@ -970,7 +970,7 @@ ACTION_FOR_EACH description IN
 //dark_moon
         PATCH_IF "%row_name%" STRING_EQUAL_CASE "DARK_MOON" BEGIN
           READ_2DA_ENTRY index 4 col_count dark_moon_desc
-          SPRINT old_dark_moon ~SORCEROUS LINEAGE: Disciples of the Order of the Dark Moon must display some sort of sorcerous power during their initiation. As such, All Dark Moon Monks have a minor level of magical ability. This ability allows the Dark Moon Monk to cast a level 1 Invocation, Illusion or Necromancy spell of choice once per day. As the Dark Moon Monk gains in levels, stronger spells may be chosen, gaining level 2 spells at 5th level, level 3 spells at 9th level, level 4 spells at 13th level and level 5 spells at 17th level.~
+          SPRINT old_dark_moon ~术士血脉：暗月教团的信徒入门时必须展现出某种法术天赋。因此所有暗月武僧都具备微弱的施法能力。本能力允许暗月武僧每日选择施展一个1环的塑能、幻术或死灵系法术。随着等级提升，可选择更强的法术：5级可选用2环，9级3环，13级4环，17级5环。~
           SPRINT new_dark_moon ~术士血脉：暗月教团的信徒入门时必须展现出某种法术天赋。因此所有暗月武僧都具备微弱的施法能力，可像法师一样施展有限的塑能、幻术与死灵学派法术。暗月武僧随等级提升获得更强力的法术：5级可选用2环，9级3环，13级4环。习得法术如下：
   1环：目盲术、魔法飞弹、镜像术、惊恐术
   2环：模糊术、造影术、恐慌术、耳聋术

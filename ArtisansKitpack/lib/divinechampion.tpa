@@ -179,7 +179,7 @@ ACTION_FOR_EACH description IN
           READ_2DA_ENTRY index 4 col_count divinechampion_desc
           SPRINT old_divinechampion ~职业限制：~
           SPRINT new_divinechampion ~–5级：可使用「强力攻击」与「武器娴熟」攻击模式，同一时间仅可激活其中一种。
-		  
+
 强力攻击：神圣斗士牺牲精准度换取更重、更具杀伤力的打击，近战零级命中值降低3点，近战伤害提升3点。神圣斗士力量需达到17或以上才能激活此能力。
 
 武器娴熟：神圣斗士专注于防御，以精准为代价，零级命中值降低3点，护甲等级提升3点。神圣斗士智力需达到15或以上才能激活此能力。

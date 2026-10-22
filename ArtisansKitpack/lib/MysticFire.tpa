@@ -45,11 +45,11 @@ LAF ADD_KIT_EX
 	// Monk = 20
 	// Shaman = 21
     kit_class     = 6
-	
+
     mixed         = RESOLVE_STR_REF(~秘火骑士~)
-	
+
     lower         = RESOLVE_STR_REF(~秘火骑士~)
-	
+
     help          = RESOLVE_STR_REF(~秘火骑士：秘火骑士是侍奉魔法女神蜜斯特拉的圣武士。他们既精通近战格斗，也擅长奥术魔法。除了恪守圣武士的传统美德外，秘火骑士还将毕生精力投入到古老魔法的发掘与研习之中。
 
 职业优势：
@@ -64,7 +64,7 @@ LAF ADD_KIT_EX
  4环：高等厄运诅咒、火焰护盾·赤、石肤术、秘语术
 <MF_LEVEL5><MF_LEVEL6><MF_LEVEL7>
 –每日可使用一次「破法术击」，之后每提升6级额外获得1次使用次数。
- 
+
 破法术击：秘火骑士可制裁施法者，扰乱其防御法术与施法能力。两回合内秘火骑士的下一次攻击会驱散目标的战斗防护效果。此外，若目标法术豁免失败（难度-2），则两回合内法术失败率为100%。
 
 –5级起，每日可使用一次「法术之刃」。
@@ -81,7 +81,7 @@ LAF ADD_KIT_EX
 –无法使用防护邪恶。
 –无法驱散不死生物。
 –无法使用圣疗术。~)
-	
+
     briefdesc     = RESOLVE_STR_REF(~秘火骑士：秘火骑士是侍奉魔法女神蜜斯特拉的圣武士。他们既精通近战格斗，也擅长奥术魔法，毕生致力于古老魔法的发掘与研习。~)
 	
 	// fallen = 1
@@ -287,7 +287,7 @@ SAY UNIDENTIFIED_DESC ~破法术击
 秘火骑士可制裁施法者，扰乱其防御法术与施法能力。两回合内秘火骑士的下一次攻击会驱散目标的战斗防护效果。此外，若目标法术豁免失败（难度-2），则两回合内法术失败率为100%。
 
 破法术击的效果无视所有武器防护，即便攻击本身被招架也依然生效。~
- 
+
 OUTER_SET mystic_fire_ids = IDS_OF_SYMBOL (~kit~ ~C0MF~)
   
 COPY ~%MOD_FOLDER%/lua/m_c0pal1.lua~      ~override~ // Lua file read by EEex, provided by Bubbs and further edited by myself
@@ -316,7 +316,7 @@ SAY NAME1 ~额外1环法术~
 SAY NAME2 ~额外1环法术~
 SAY UNIDENTIFIED_DESC ~额外1环法术
 选择本能力可让秘火骑士额外施展一个1环法术。~
- 
+
 COPY ~%MOD_FOLDER%/Paladin/MysticFire/spells/c0mfhl2.spl~ ~override~
 SAY NAME1 ~额外2环法术~
 SAY NAME2 ~额外2环法术~
@@ -324,7 +324,7 @@ SAY UNIDENTIFIED_DESC ~额外2环法术
 选择本能力可让秘火骑士额外施展一个2环法术。
 
 需要：额外1环法术~
- 
+
 COPY ~%MOD_FOLDER%/Paladin/MysticFire/spells/c0mfhl3.spl~ ~override~
 SAY NAME1 ~额外3环法术~
 SAY NAME2 ~额外3环法术~
@@ -332,7 +332,7 @@ SAY UNIDENTIFIED_DESC ~额外3环法术
 选择本能力可让秘火骑士额外施展一个3环法术。
 
 需要：额外2环法术~
- 
+
 COPY ~%MOD_FOLDER%/Paladin/MysticFire/spells/c0mfhl4.spl~ ~override~
 SAY NAME1 ~额外4环法术~
 SAY NAME2 ~额外4环法术~

@@ -66,10 +66,10 @@ ACTION_FOR_EACH description IN
           READ_2DA_ENTRY index 4 col_count kit_desc
           SPRINT old_desc ~–阵营不能是守序善良~
           SPRINT new_desc ~–16级：可将致残打击作为切换式能力使用。
-          
+
 致残打击：盗贼背刺时，可降低自身2级背刺伤害倍率，对目标施加致残打击。目标死亡豁免（难度-3）失败则伤害值受-4惩罚，且下回合无法造成暴击。
 –20级：获得史诗精准。
-          
+
 史诗精准：进入潜行或隐身状态时，盗贼的下一次攻击造成最大伤害，且额外获得+4修正。直到下一次重新进入潜行前，该修正不会恢复。
 ~
           GET_STRREF %kit_desc% kit_text
@@ -330,7 +330,7 @@ COPY_EXISTING ~KITLIST.2DA~ ~override~
       LPF set_clab_2da_entries INT_VAR f_MinLevel = 1 f_MaxLevel = 1 STR_VAR f_Entry = AP_C0TH-E2 END // USE MAGIC DEVICE
         PRETTY_PRINT_2DA
       END
-      
+
       END
       END
     END
